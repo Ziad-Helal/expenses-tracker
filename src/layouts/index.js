@@ -1,7 +1,8 @@
-import ExpensesList from "./ExpensesList/ExpensesList";
-import ExpenseItem from "./ExpensesList/ExpenseItem/ExpenseItem";
-import ExpensesChart from "./ExpensesChart/ExpensesChart";
-import ChartBar from "./ExpensesChart/ChartBar/ChartBar";
 import ExpenseForm from "./ExpenseForm/ExpenseForm";
+import ExpensesView from "./ExpensesView/ExpensesView";
+import ExpensesChart from "./ExpensesView/ExpensesChart/ExpensesChart";
+import ChartBar from "./ExpensesView/ExpensesChart/ChartBar/ChartBar";
+import ExpensesList from "./ExpensesView/ExpensesList/ExpensesList";
+import ExpenseItem from "./ExpensesView/ExpensesList/ExpenseItem/ExpenseItem";
 
-export { ExpensesList, ExpenseItem, ExpensesChart, ChartBar, ExpenseForm };
+export { ExpenseForm, ExpensesView, ExpensesChart, ChartBar, ExpensesList, ExpenseItem };
