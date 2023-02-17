@@ -5,8 +5,24 @@ export default function ExpenseForm() {
         <form>
             <fieldset>
                 <legend className="hidden">Add New Expense</legend>
-                <p>Form Row</p>
-                <Button type="submit">Add</Button>
+                <div>
+                    <p>
+                        <label htmlFor="title">Title</label>
+                        <input type="text" name="title" id="title" />
+                    </p>
+                    <p>
+                        <label htmlFor="date">Date</label>
+                        <input type="date" name="date" id="date" />
+                    </p>
+                    <p>
+                        <label htmlFor="amount">Amount</label>
+                        <input type="number" name="amount" id="amount" />
+                    </p>
+                </div>
+                <div>
+                    <Button>Cancel</Button>
+                    <Button type="submit">Add Expense</Button>
+                </div>
             </fieldset>
         </form>
     );

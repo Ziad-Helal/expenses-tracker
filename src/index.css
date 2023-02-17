@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --foreground-color: #374151; /* Gray 700 */
+        --background-color: #f3f4f6; /* Gray 100 */
+        --primary-color-1: #c084fc; /* Purple 400 */
+        --primary-color-2: #581c87; /* Purple 900 */
+        --primary-color-3: #a855f7; /* Purple 500 */
+        --primary-color-4: #7e22ce; /* Purple 700 */
+        --secondary-color-1: #9ca3af; /* Gray 400 */
+        --secondary-color-2: #111827; /* Gray 900 */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-color: #f3f4f6; /* Gray 100 */
+        --background-color: #374151; /* Gray 700 */
+        --primary-color-1: #581c87; /* Purple 900 */
+        --primary-color-2: #c084fc; /* Purple 400 */
+        --primary-color-3: #7e22ce; /* Purple 700 */
+        --primary-color-4: #a855f7; /* Purple 500 */
+        --secondary-color-1: #111827; /* Gray 900 */
+        --secondary-color-2: #9ca3af; /* Gray 400 */
+    }
+}
+
+html,
+input,
+select {
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+}
